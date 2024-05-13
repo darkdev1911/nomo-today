@@ -1,0 +1,33 @@
+.viewall-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+
+  .entries {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+
+    p {
+      margin: 0;
+      padding: 5px 0;
+      font-family: Arial, sans-serif; /* Similar to Twitter's font */
+      line-height: 1.5; /* Adjust for spacing */
+      border-bottom: 1px solid #ddd; /* Add border to bottom of each paragraph */
+      font-size: 1.5rem;
+    }
+
+    p:last-child { /* Remove border from the last entry */
+      border-bottom: none;
+    }
+  }
+
+
+
+
+}
