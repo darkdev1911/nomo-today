@@ -8,7 +8,7 @@ const port = 3001; // or any other port you prefer
 
 // POST request to add a new entry
 app.post('/addEntry', (req, res) => {
-    const filePath = '/home/stefanheher/nomo_development/nomo-today-webon/backend/dist/entries.txt';
+    const filePath = '/home/stefanheher/nomo_development/nomo-today/backend/dist/entries.txt';
     const entry = req.body.entry;
     fs.appendFile(filePath, entry + '\n', (err) => {
         if (err) {
@@ -23,7 +23,7 @@ app.post('/addEntry', (req, res) => {
 
 // GET request to get all entries
 app.get('/allEntries', (req, res) => {
-    const filePath = '/home/stefanheher/nomo_development/nomo-today-webon/backend/dist/entries.txt';
+    const filePath = '/home/stefanheher/nomo_development/nomo-today/backend/dist/entries.txt';
     fs.readFile(filePath, 'utf8', (err, data) => {
         if (err) {
             console.error('Error reading file:', err);
